@@ -22,7 +22,7 @@ const search = () => {
         }
         // Mengganti URL dengan parameter yang diperbarui
         replace(`${pathname}?${params.toString()}`);
-    }, 300); // Debounce dengan delay 300ms
+        }, 300); // Debounce dengan delay 300ms
 
   return (
     <div className="relative flex flex-1">
