@@ -5,7 +5,7 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
 
 // Komponen search untuk menangani pencarian
-const search = () => {
+const Search = () => {
     const searchParams = useSearchParams(); // Mendapatkan parameter query saat ini
     const pathname = usePathname(); // Mendapatkan path saat ini
     const { replace } = useRouter(); // Mengambil fungsi replace dari useRouter untuk mengganti URL
@@ -40,4 +40,4 @@ const search = () => {
   )
 }
 
-export default search
+export default Search
